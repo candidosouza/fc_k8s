@@ -54,6 +54,17 @@ kubectl port-forward pod/hello-k8s 8080:80
 
 ```
 
+> descrição do pod
+```
+kubectl describe pod pod/hello-k8s
+
+```
+
+> get replicasets
+```
+kubectl get replicasets
+```
+
 > deletando pos
 ```
 kubectl delete pod hello-k8s
