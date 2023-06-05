@@ -43,12 +43,18 @@ kubectl config get-clusters
 kubectl config use-context nome-do-cluster
 ```
 
->
+> aplicar arquivo de configuração 
 ```
+kubectl apply -f k8s/pod.yaml
+```
+
+> portas no pod
+```
+kubectl port-forward pod/hello-k8s 8080:80
 
 ```
 
->
+> deletando pos
 ```
-
+kubectl delete pod hello-k8s
 ```
