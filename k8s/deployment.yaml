@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-k8s
+  labels:
+    app: hello-k8s
+spec:
+  selector:
+    matchLabels:
+      app: hello-k8s    
+  replicas: 10
+  template:
+    metadata:
+      labels:
+        app: "hello-k8s"
+    spec:
+      containers:
+        - name: hello-k8s
+          image: "candidosouzza/hello-k8s:V2"

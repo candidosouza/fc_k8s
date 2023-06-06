@@ -60,12 +60,17 @@ kubectl describe pod pod/hello-k8s
 
 ```
 
+> deletando pos
+```
+kubectl delete pod hello-k8s
+```
+
 > get replicasets
 ```
 kubectl get replicasets
 ```
 
-> deletando pos
+> deletando replicaset
 ```
-kubectl delete pod hello-k8s
+kubectl delete replicaset hello-k8s
 ```
