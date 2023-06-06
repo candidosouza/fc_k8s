@@ -45,6 +45,9 @@ kubectl config use-context nome-do-cluster
 
 > aplicar arquivo de configuração 
 ```
+kubectl apply -f <arquivo>.yaml
+```
+```
 kubectl apply -f k8s/pod.yaml
 ```
 
@@ -96,4 +99,9 @@ kubectl rollout undo deployment hello-k8s
 número da revisão obtida pelo histpotico (kubectl rollout history deployment hello-k8s)
 ```
 kubectl rollout undo deployment hello-k8s --to--revision=<número da revisão>
+```
+
+> acessando o pod por redirecionamento vindo do service
+```
+kubectl port-forward svc/hello-k8s-service 8000:80
 ```
