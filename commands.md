@@ -105,3 +105,8 @@ kubectl rollout undo deployment hello-k8s --to--revision=<número da revisão>
 ```
 kubectl port-forward svc/hello-k8s-service 8000:80
 ```
+
+acessando a api do kubernetes
+```
+kubectl proxy --port=8080
+```

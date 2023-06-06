@@ -8,6 +8,6 @@ spec:
   type: ClusterIP
   ports:
   - name: hello-k8s-service
-    port: 80
-    targetPort: 8000
-    protocol: TCP
+    port: 80 # porta do kubernetes
+    targetPort: 8000 # porta do container
+    protocol: TCP # para entrar na rede do kubernetes
