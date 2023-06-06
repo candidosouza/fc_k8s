@@ -74,3 +74,26 @@ kubectl get replicasets
 ```
 kubectl delete replicaset hello-k8s
 ```
+
+> listando históricos
+```
+kubectl rollout history <objeto> <nome>
+```
+ex:
+```
+kubectl rollout history deployment hello-k8s
+```
+
+> voltando para versão anterior
+```
+kubectl rollout undo <objeto> <name>
+```
+ex:
+```
+kubectl rollout undo deployment hello-k8s
+```
+> voltando para uma versão expecífica
+número da revisão obtida pelo histpotico (kubectl rollout history deployment hello-k8s)
+```
+kubectl rollout undo deployment hello-k8s --to--revision=<número da revisão>
+```
